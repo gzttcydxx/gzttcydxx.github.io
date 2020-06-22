@@ -183,7 +183,7 @@ code {
     <tr>
         <td width="60"><span>Type</span></td>
         <td>
-            <select id="type">
+            <select id="type" style="cursor: pointer;">
                 <option value="MD5">MD5</option>
                 <option value="SHA1">SHA1</option>
                 <option value="SHA256">SHA256</option>
@@ -195,17 +195,17 @@ code {
     <tr>
         <td><span>Content</span></td>
         <td>
-            <input id="content" type="text" placeholder="username@website.com">
+            <input id="content" type="text" placeholder="username@website.com" style="cursor: auto;">
         </td>
     </tr>
     <tr>
         <td><span>HMAC</span></td>
-        <td><input id="hmac" type="text" placeholder="1password"></td>
+        <td><input id="hmac" type="text" placeholder="1password" style="cursor: auto;"></td>
     </tr>
     <tr>
         <td><span>Length<br/><code id="length-show">14</code></span></td>
         <td>
-            <input id="length" type="range" max="40" min="1" step="1" value="14" oninput="range()" onchange="range()">
+            <input id="length" type="range" max="40" min="1" step="1" value="14" oninput="range()" onchange="range()" style="cursor: pointer;">
         </td>
     </tr>
     <tr>
@@ -215,7 +215,7 @@ code {
     </tr>
     <tr>
         <td colspan="2">
-            <button onclick="gen()">Generate</button>
+            <button onclick="gen()" style="cursor: pointer;">Generate</button>
         </td>
     </tr>
 </table>
